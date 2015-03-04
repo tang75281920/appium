@@ -74,7 +74,7 @@ MultiAction().add(action0).add(action1).perform()
 
 ### 错误和解决方法
 
-一个不幸的缺陷存在于iOS的7.x的模拟器上，ScrollViews无法识别由UIAutomation创建的手势（在iOS上Appium使用为UIAutomation）。 为了实现此功能，我们已经提供了新的函数， `scroll`, 在许多情况下可以让你实现跟ScrollView一样的功能！
+不幸的是有一个缺陷存在于iOS的7.x的模拟器上，ScrollViews无法识别由UIAutomation创建的手势（在iOS上Appium使用的是UIAutomation）。 为了实现此功能，我们已经提供了新的函数， `scroll`, 在许多情况下可以让你实现跟ScrollView一样的功能！
 
 
 
