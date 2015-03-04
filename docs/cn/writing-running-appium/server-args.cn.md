@@ -21,7 +21,7 @@
 |`-r`, `--backend-retries`|3|(iOS-only) 遇到 crash 或者 超时，Instrument 重新参试启动的次数。|`--backend-retries 3`|
 |`--session-override`|false|允许 session 覆盖 (冲突的话)||
 |`--full-reset`|false|(iOS) 删除整个模拟器目录。 (Android) 通过卸载应用（而不是清楚数据）重置应用状态。在 Android 上，session 完成后也会删除应用。||
-|`--no-reset`|false|session 之间不充值应用状态 (IOS: 不删除应用的 plist 文件； Android: 在创建一个新的 session 前不删除应用。)||
+|`--no-reset`|false|session 之间不重置应用状态 (IOS: 不删除应用的 plist 文件； Android: 在创建一个新的 session 前不删除应用。)||
 |`-l`, `--pre-launch`|false|在第一个 session 前，预启动应用 (iOS 需要 --app 参数，Android 需要 --app-pkg 和 --app-activity)||
 |`-lt`, `--launch-timeout`|90000|(iOS-only) 等待 Instruments 启动的时间||
 |`-g`, `--log`|null|将日志输出到指定文件|`--log /path/to/appium.log`|
