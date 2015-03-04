@@ -32,7 +32,7 @@
 |`--merciful`, `-m`|false|不运行强制关闭没有响应的 instruments 的监视进程||
 |`--app-pkg`|null|(Android-only) 你要运行的apk的java 包。 (例如， com.example.android.myApp)|`--app-pkg com.example.android.myApp`|
 |`--app-activity`|null|(Android-only) 打开应用时，启动的 Activity 的名字(比如， MainActivity)|`--app-activity MainActivity`|
-|`--app-wait-package`|false|(Android-only) 你想等待的 Activity 的 包名。(比如， com.example.android.myApp)|`--app-wait-package com.example.android.myApp`|
+|`--app-wait-package`|false|(Android-only) 你想等待的 Activity 所在包的 包名。(比如， com.example.android.myApp)|`--app-wait-package com.example.android.myApp`|
 |`--app-wait-activity`|false|(Android-only) 你想等待的 Activity 名字(比如， SplashActivity)|`--app-wait-activity SplashActivity`|
 |`--android-coverage`|false|(Android-only) 完全符合条件的 instrumentation 类. 作为命令 adb shell am instrument -e coverage true -w 的 -w 的参数|`--android-coverage com.my.Pkg/com.my.Pkg.instrumentation.MyInstrumentation`|
 |`--avd`|null|要启动的 avd 的名字|`--avd @default`|
