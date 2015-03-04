@@ -42,8 +42,8 @@
 |`--default-device`, `-dd`|false|(IOS-Simulator-only) instruments 启动时使用默认的模拟器||
 |`--force-iphone`|false|(IOS-only) 无论应用要用什么模拟器，强制使用 iPhone 模拟器||
 |`--force-ipad`|false|(IOS-only) 无论应用要用什么模拟器，强制使用 iPad 模拟器||
-|`--language`|null|(IOS-only) iOS 模拟器的语言|`--language en`|
-|`--locale`|null|(IOS-only) iOS simulator 的区域|`--locale en_US`|
+|`--language`|null| iOS 模拟器 / Android 模拟器的语言|`--language en`|
+|`--locale`|null| iOS 模拟器 / Android 模拟器的区域|`--locale en_US`|
 |`--calendar-format`|null|(IOS-only) iOS 模拟器的日历格式|`--calendar-format gregorian`|
 |`--orientation`|null|(IOS-only) 初始化请求时，使用 LANDSCAPE 或者 PORTRAIT|`--orientation LANDSCAPE`|
 |`--tracetemplate`|null|(IOS-only) 指定 Instruments 使用的 .tracetemplate 文件|`--tracetemplate /Users/me/Automation.tracetemplate`|
