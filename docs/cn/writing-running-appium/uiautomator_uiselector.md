@@ -1,21 +1,20 @@
 ## uiautomator UiSelector
 
-Appium enables searching using [UiSelectors](http://developer.android.com/tools/help/uiautomator/UiSelector.html).
-[UiScrollable](http://developer.android.com/tools/help/uiautomator/UiScrollable.html)
-is also supported.
+Appium 能够使用 [UiSelectors](http://developer.android.com/tools/help/uiautomator/UiSelector.html) 执行搜索操作。
+当然 [UiScrollable](http://developer.android.com/tools/help/uiautomator/UiScrollable.html)
+也是支持的。
 
-Note that the index selector is unreliable so prefer instance instead. The
-following examples are written against the api demos apk using Ruby.
+注意， 使用索引（index）选择器是不可靠的， so prefer instance instead. 下面是用 Ruby 针对包（ api demos ） 写得例子。
 
 
-Find the first textview.
+找到第一个文本控件。
 
 ```ruby
 # ruby
 first_textview = find_element(:uiautomator, 'new UiSelector().className("android.widget.TextView").instance(0)');
 ```
 
-Find the first element by text.
+找到这个文本的第一个元素。
 
 ```ruby
 # ruby
@@ -23,16 +22,16 @@ first_text = find_element(:uiautomator, 'new UiSelector().text("Animation")')
 first_text.text # "Animation"
 ```
 
-Find the first scrollable element, then find a TextView with the text "Tabs".
-The "Tabs" element will be scrolled into view.
+找到第一个可滚动的元素， 然后找到文本是 "Tabs" 的文本控件。
+"Tabs" 元素就是将要滚动到的控件。
 
 ```ruby
 # ruby
 element = find_element(:uiautomator, 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className("android.widget.TextView"), "Tabs")')
 ```
 
-As a special case, scrollIntoView returns the element that is scrolled into view.
-scrollIntoView allows scrolling to any UiSelector.
+scrollIntoView 是一个特例，会返回滚动到指定控件的元素。
+scrollIntoView 对任何的 UiSelector 都可以执行滚动操作。
 
 ```ruby
 # ruby
