@@ -4,7 +4,7 @@ Appium 能够使用 [UiSelectors](http://developer.android.com/tools/help/uiauto
 当然 [UiScrollable](http://developer.android.com/tools/help/uiautomator/UiScrollable.html)
 也是支持的。
 
-注意， 使用索引（index）选择器是不可靠的， so prefer instance instead. 下面是用 Ruby 针对包（ api demos ） 写得例子。
+注意， 使用选择器索引是不可靠的，所以最好用实例代替。 下面是用 Ruby 针对包（ api demos ） 写的例子。
 
 
 找到第一个文本控件。
